@@ -1,7 +1,227 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal website for Jiwoo Kim.">
+  <title>Jiwoo Kim | Personal Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-  <h1>Welcome to my Personal Page</h1>
-  <p>Hosted on GitHub Pages!</p>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Jiwoo Kim home">
+        <span class="brand-mark" aria-hidden="true">*</span>
+        <span>Jiwoo Kim</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#ai-usage">AI Usage</a></li>
+      </ul>
+      <a class="nav-cta" href="assets/cv.pdf">Open CV</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero band" id="top" aria-labelledby="intro-heading">
+      <div class="section-inner hero-grid">
+        <div class="hero-copy">
+          <h1 id="intro-heading">Jiwoo Kim</h1>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#projects">View projects</a>
+            <a class="button secondary" href="assets/cv.pdf">Download CV</a>
+          </div>
+        </div>
+
+        <aside class="profile-card" aria-label="Profile summary">
+          <img
+            class="profile-avatar"
+            src="assets/profile.png"
+            alt="Profile avatar for Jiwoo Kim"
+            width="480"
+            height="480"
+          >
+          <div class="profile-copy">
+            <p class="badge-pill">zoo575</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section band band-soft" id="about" aria-labelledby="about-heading">
+      <div class="section-inner split">
+        <div class="section-header">
+          <h2 id="about-heading">About Me</h2>
+        </div>
+        <div class="body-column">
+          <dl class="info-list" aria-label="Personal information">
+            <div>
+              <dt>Name</dt>
+              <dd>Jiwoo Kim</dd>
+            </div>
+            <div>
+              <dt>Major</dt>
+              <dd>Computer Science &amp; Engineering</dd>
+            </div>
+            <div>
+              <dt>Interests</dt>
+              <dd>Machine Learning, Numerical Analysis, Mathematical Modeling</dd>
+            </div>
+          </dl>
+          <div class="tag-row" aria-label="Focus areas">
+            <span>Machine Learning</span>
+            <span>Numerical Analysis</span>
+            <span>Mathematical Modeling</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band" id="projects" aria-labelledby="projects-heading">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2 id="projects-heading">Projects</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <span class="card-mark" aria-hidden="true">*</span>
+            <p class="project-type">Course Project</p>
+            <h3>Basic Computer Course Project</h3>
+          </article>
+          <article class="project-card">
+            <span class="card-mark" aria-hidden="true">*</span>
+            <p class="project-type">OOP Class</p>
+            <h3>Website Designing using vibe coding</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band band-soft" id="hobbies" aria-labelledby="hobbies-heading">
+      <div class="section-inner split">
+        <div class="section-header">
+          <h2 id="hobbies-heading">Hobbies</h2>
+        </div>
+        <div class="hobby-grid" aria-label="Personal hobbies">
+          <article class="hobby-card">
+            <span class="card-mark" aria-hidden="true">*</span>
+            <h3>Playing basketball</h3>
+          </article>
+          <article class="hobby-card">
+            <span class="card-mark" aria-hidden="true">*</span>
+            <h3>Watching LoL competitions</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band" id="courses" aria-labelledby="courses-heading">
+      <div class="section-inner split">
+        <div class="section-header">
+          <h2 id="courses-heading">Courses</h2>
+        </div>
+        <ol class="course-list" aria-label="Planned courses">
+          <li>
+            <span>01</span>
+            <strong>Mathematical Foundations of Deep Neural Networks</strong>
+          </li>
+          <li>
+            <span>02</span>
+            <strong>Mathematical Machine Learning Theory</strong>
+          </li>
+          <li>
+            <span>03</span>
+            <strong>Deep Learning</strong>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section band band-dark" id="resume" aria-labelledby="resume-heading">
+      <div class="section-inner">
+        <div class="dark-copy">
+          <h2 id="resume-heading">Resume</h2>
+          <a class="button secondary-on-dark" href="assets/cv.pdf">Open CV PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band" id="contact" aria-labelledby="contact-heading">
+      <div class="section-inner">
+        <div class="coral-callout">
+          <div>
+            <h2 id="contact-heading">Contact</h2>
+            <dl class="contact-info" aria-label="Contact information">
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:joseph575@snu.ac.kr">joseph575@snu.ac.kr</a></dd>
+              </div>
+              <div>
+                <dt>GitHub</dt>
+                <dd><a href="https://github.com/zoo575">github.com/zoo575</a></dd>
+              </div>
+            </dl>
+          </div>
+          <div class="callout-actions">
+            <a class="button inverted" href="mailto:joseph575@snu.ac.kr">Email me</a>
+            <a class="button inverted-secondary" href="https://github.com/zoo575">GitHub</a>
+            <a class="button inverted-secondary" href="assets/cv.pdf">CV PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band band-soft" id="ai-usage" aria-labelledby="ai-usage-heading">
+      <div class="section-inner split">
+        <div class="section-header">
+          <h2 id="ai-usage-heading">AI Usage</h2>
+        </div>
+        <div class="ai-usage-card">
+          <dl class="ai-usage-list" aria-label="AI usage details">
+            <div>
+              <dt>Tool</dt>
+              <dd>Codex</dd>
+            </div>
+            <div>
+              <dt>Prompt</dt>
+              <dd>make Navigation menu linking to each section.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="section-inner footer-grid">
+      <a class="footer-brand" href="#top" aria-label="Jiwoo Kim home">
+        <span class="brand-mark" aria-hidden="true">*</span>
+        <span>Jiwoo Kim</span>
+      </a>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#ai-usage">AI Usage</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
